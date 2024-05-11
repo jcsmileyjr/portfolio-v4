@@ -19,7 +19,7 @@ const Header = () => {
     setSize(window.innerWidth);
     };    
     return (
-        <section className="bg-primaryBlue w-full text-white py-4 px-8 flex flex-col md:flex-row justify-between">
+        <section className="bg-primaryBlue w-full text-white py-4 px-8 flex flex-col md:flex-row justify-between mb-8">
             <div className='flex flex-row justify-between'>
                 <div className='flex flex-row gap-4 items-center '>
                     <Image priority={false} src={Coder} width={75} height={50} alt="" className='h-16 ml-12' />
