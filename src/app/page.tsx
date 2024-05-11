@@ -41,9 +41,7 @@ export default function Home() {
           </div>
         </aside>
         <div className='w-full md:w-3/4'>
-          <h1>
-            Welcome to my portfolio
-          </h1>
+          <p>These are my favorite projects curated from more than 100 in my GitHub.</p>
         </div>
       </div>
     </main>
