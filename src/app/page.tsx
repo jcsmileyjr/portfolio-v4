@@ -76,7 +76,7 @@ export default function Home() {
           </div>
 
           {/* DisplayProjects */}
-          <div className='grid grid-cols-1 md:grid-cols-3 gap-8'>
+          <div className='grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-4 md:gap-4 lg:gap-8'>
             {
               Projects
               .filter(project => technologies === "All" || project.tech1 === technologies || project.tech2 === technologies || project.tech3 === technologies || (technologies === "fullstack" && (project.tech3 === "sanityio" || project.tech3 === "sanityio"))) // Leaving the extra sanityio for reference
