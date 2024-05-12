@@ -4,32 +4,10 @@
         "picture":"edgeMotors",
         "title":"Edge Motors Car Museum",
         "description":"Paid Freelance mobile app completed in April of 2019",
-        "tech1":"reactNative",
+        "tech1":"reactnative",
         "tech2":"css",
         "tech3":"html",
-        "github":"",
-        "demo":""
-    },
-    {
-        "type":"image",
-        "picture":"blackjack",
-        "title":"Black-Jack",
-        "description":"A traditional Black-Jack card game developed as a full-stack React app.",
-        "tech1":"react",
-        "tech2":"html",
-        "tech3":"bootstrap",
-        "github":"https://github.com/jcsmileyjr/BlackJack",
-        "demo":"https://smiley-blackjack-game.netlify.app/"
-    },
-    {
-        "type":"image",
-        "picture":"helpMe",
-        "title":"Help Me",
-        "description":"Mental health crisis app that won the 2021 DigitalOcean Hackathon.",
-        "tech1":"angular",
-        "tech2":"css",
-        "tech3":"html",
-        "github":"https://github.com/xamthor/Help-Client",
+        "github":"none",
         "demo":"none"
     },
     {
@@ -53,6 +31,28 @@
         "tech3":"sanityio",
         "github":"https://github.com/jcsmileyjr/elder",
         "demo":"https://github.com/jcsmileyjr/carwash"
+    },    
+    {
+        "type":"image",
+        "picture":"helpMe",
+        "title":"Help Me",
+        "description":"Mental health crisis app that won the 2021 DigitalOcean Hackathon.",
+        "tech1":"angular",
+        "tech2":"css",
+        "tech3":"html",
+        "github":"https://github.com/xamthor/Help-Client",
+        "demo":"none"
+    },
+    {
+        "type":"image",
+        "picture":"blackjack",
+        "title":"Black-Jack",
+        "description":"A traditional Black-Jack card game developed as a React app.",
+        "tech1":"react",
+        "tech2":"html",
+        "tech3":"bootstrap",
+        "github":"https://github.com/jcsmileyjr/BlackJack",
+        "demo":"https://smiley-blackjack-game.netlify.app/"
     },
     {
         "type":"image",
