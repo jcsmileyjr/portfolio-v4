@@ -1,0 +1,24 @@
+[
+    {
+        "type":"image",
+        "picture":"edgeMotors",
+        "title":"Edge Motors Car Museum",
+        "description":"Paid Freelance mobile app completed in April of 2019",
+        "tech1":"reactNative",
+        "tech2":"css",
+        "tech3":"html",
+        "github":"",
+        "demo":""
+    },
+    {
+        "type":"video",
+        "picture":"blackjack",
+        "title":"Black-Jack",
+        "description":"A traditional Black-Jack card game developed as a full-stack React app.",
+        "tech1":"react",
+        "tech2":"html",
+        "tech3":"bootstrap",
+        "github":"https://github.com/jcsmileyjr/BlackJack",
+        "demo":"https://smiley-blackjack-game.netlify.app/"
+    }
+]

@@ -2,6 +2,8 @@ import Image from 'next/image';
 import Header from './components/header/header';
 import HeadShot from './images/personal/head-shot.jpg';
 import DisplaySkill from './components/displaySkill/displaySkill';
+import Project from './components/project/project';
+import Projects from './data/projects.json';
 
 export default function Home() {
   return (
@@ -21,7 +23,7 @@ export default function Home() {
             <p>Tech Meetup Organizer</p>
           </div>
           {/* Languages and Frameworks */}
-          <div className='flex flex-row md:flex-col justify-between px-4 mt-8'>
+          <div className='flex flex-row justify-center gap-16 md:gap-4 md:flex-col md:justify-between px-4 mt-8'>
             <div className='md:m-auto md:pr-16'>
               <h2 className='font-bold text-xl'>Languages</h2>
               <DisplaySkill content="JavaScript" />
@@ -30,7 +32,7 @@ export default function Home() {
               <DisplaySkill content="HTML5" />
               <DisplaySkill content="CSS3" />                            
             </div>
-            <div className='md:mt-4 md:m-auto md:pr-16'>
+            <div className='md:mt-4 md:m-auto md:pr-12'>
               <h2 className='font-bold text-xl'>Frameworks</h2>
               <DisplaySkill content="React" />
               <DisplaySkill content="Next.js" />
@@ -40,9 +42,13 @@ export default function Home() {
             </div>
           </div>
         </aside>
-        <div className='w-full md:w-3/4'>
-          <p>These are my favorite projects curated from more than 100 in my GitHub.</p>
-        </div>
+        <section className='w-full md:w-3/4'>
+          <p className='m-auto px-2 md:px-0 mb-8'>These are my favorite projects curated from more than 100 in my GitHub.</p>
+          <div className='grid grid-cols-3 gap-8'>
+            <Project project={Projects[0]} />
+            <Project project={Projects[1]} />
+          </div>
+        </section>
       </div>
     </main>
   )
