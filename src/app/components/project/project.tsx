@@ -28,8 +28,10 @@ const Project = ({project}: {project: ProjectType}) => {
 
             {/* Feature Github link & demo link side by side */}
             <div className="flex flex-row justify-between mt-4">
-                <Link className='hover:underline' style={{color: '#20B3C7', fontWeight: 'bold'}} href={project.github} rel="noopener" target="_blank">GitHub </Link>
-
+                {project.github === "none" && <p>Code is private to Employer</p>}
+                {project.github !== "none" && 
+                    <Link className='hover:underline' style={{color: '#20B3C7', fontWeight: 'bold'}} href={project.github} rel="noopener" target="_blank">GitHub </Link>
+                }
                 {project.demo !== "none" &&
                     <Link className='hover:underline' style={{color: '#20B3C7', fontWeight: 'bold'}} href={project.demo} rel="noopener" target="_blank">Demo </Link>
                 }

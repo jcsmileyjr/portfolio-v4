@@ -46,7 +46,7 @@ export default function Home() {
           </div>
         </aside>
         <section className='w-full md:w-3/4'>
-          <p className='m-auto px-2 md:px-0 mb-8'>These are my favorite projects curated from more than 100 in my GitHub.</p>
+          <p className='m-auto px-2 md:px-0 mb-4'>These are my favorite projects curated from more than 100 in my GitHub.</p>
           {/* Filter Projects*/}
           <div className='grid grid-cols-2 md:grid-cols-3 gap-2 mb-4 md:ml-4 lg:grid-cols-4 xl:grid-cols-6'>
             <div className='flex flex-row justify-center1 ml-10 md:ml-0'>
