@@ -50,27 +50,34 @@ export default function Home() {
           {/* Filter */}
           <div className='flex flex-row justify-center gap-12 mb-4'>
             <div>
-              <input className='appearance-none focus:bg-primaryBlue rounded-full w-4 h-4 border-2 border-solid border-primaryBlue' type="radio" id="All" name="technologies" value="All" checked={technologies === "All"} onChange={(e) => setTechnologies(e.target.value)} />
+              <input className='appearance-none focus:bg-primaryBlue rounded-full w-6 h-6 border-2 border-solid border-primaryBlue' type="radio" id="All" name="technologies" value="All" checked={technologies === "All"} onChange={(e) => setTechnologies(e.target.value)} />
               <label className='text-lg ml-2' htmlFor="All">All</label>            
             </div>
             <div>
-              <input className='appearance-none focus:bg-primaryBlue rounded-full w-4 h-4 border-2 border-solid border-primaryBlue' type="radio" id="Nextjs" name="technologies" value="Nextjs" checked={technologies === "Nextjs"} onChange={(e) => setTechnologies(e.target.value)} />
+              <input className='appearance-none focus:bg-primaryBlue rounded-full w-6 h-6 border-2 border-solid border-primaryBlue' type="radio" id="Nextjs" name="technologies" value="nextjs" checked={technologies === "nextjs"} onChange={(e) => setTechnologies(e.target.value)} />
               <label className='text-lg ml-2' htmlFor="Nextjs">Nextjs</label>            
             </div>
             <div>
-              <input className='appearance-none focus:bg-primaryBlue rounded-full w-4 h-4 border-2 border-solid border-primaryBlue' type="radio" id="React" name="technologies" value="React" checked={technologies === "React"} onChange={(e) => setTechnologies(e.target.value)} />
+              <input className='appearance-none focus:bg-primaryBlue rounded-full w-6 h-6 border-2 border-solid border-primaryBlue' type="radio" id="React" name="technologies" value="react" checked={technologies === "react"} onChange={(e) => setTechnologies(e.target.value)} />
               <label className='text-lg ml-2' htmlFor="React">React</label>            
             </div>
             <div>
-              <input className='appearance-none focus:bg-primaryBlue rounded-full w-4 h-4 border-2 border-solid border-primaryBlue' type="radio" id="Angular" name="technologies" value="Angular" checked={technologies === "Angular"} onChange={(e) => setTechnologies(e.target.value)} />
+              <input className='appearance-none focus:bg-primaryBlue rounded-full w-6 h-6 border-2 border-solid border-primaryBlue' type="radio" id="Angular" name="technologies" value="angular" checked={technologies === "angular"} onChange={(e) => setTechnologies(e.target.value)} />
               <label className='text-lg ml-2' htmlFor="Angular">Angular</label>            
             </div>
+            <div>
+              <input className='appearance-none focus:bg-primaryBlue rounded-full w-6 h-6 border-2 border-solid border-primaryBlue' type="radio" id="Angular" name="technologies" value="reactnative" checked={technologies === "reactnative"} onChange={(e) => setTechnologies(e.target.value)} />
+              <label className='text-lg ml-2' htmlFor="Angular">React Native</label>            
+            </div>            
           </div>
 
           {/* Projects */}
           <div className='grid grid-cols-1 md:grid-cols-3 gap-8'>
             {
-              Projects.map((project, index) => {
+              Projects
+              .filter(project => technologies === "All" || project.tech1 === technologies || project.tech2 === technologies || project.tech3 === technologies)
+              
+              .map((project, index) => {
                 return (
                   <Project project={project} key={`project-${index}`} />
                 )
