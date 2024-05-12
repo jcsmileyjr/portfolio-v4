@@ -45,9 +45,13 @@ export default function Home() {
         <section className='w-full md:w-3/4'>
           <p className='m-auto px-2 md:px-0 mb-8'>These are my favorite projects curated from more than 100 in my GitHub.</p>
           <div className='grid grid-cols-1 md:grid-cols-3 gap-8'>
-            <Project project={Projects[0]} />
-            <Project project={Projects[1]} />
-            <Project project={Projects[2]} />
+            {
+              Projects.map((project, index) => {
+                return (
+                  <Project project={project} key={`project-${index}`} />
+                )
+              })
+            }
           </div>
         </section>
       </div>
