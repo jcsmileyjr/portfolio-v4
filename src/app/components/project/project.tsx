@@ -6,11 +6,11 @@ import blackjack from '../../images/project-images/blackjack3.png';
 
 const Project = ({project}: {project: ProjectType}) => {
     return (
-        <article className='min-h-max flex flex-col justify-between'>
+        <article className='min-h-max flex flex-col justify-between p-2 border-2 border-solid rounded-lg' style={{borderColor: '#F0F0F0'}}>
             {/* Feature a video - Future feature */}
             {/* Feature a image */}
-            {project.picture === 'edgeMotors' && <Image src={edgeMotors} alt="" width={200} height={200} className='h-96 w-96' /> }
-            {project.picture === 'blackjack' && <Image src={blackjack} alt="" width={200} height={200} className='h-96 w-96' /> }
+            {project.picture === 'edgeMotors' && <Image src={edgeMotors} alt="" width={200} height={200} className=' w-full h-96 md:w-96 rounded-lg' /> }
+            {project.picture === 'blackjack' && <Image src={blackjack} alt="" width={200} height={200} className='w-full h-96 md:w-96 rounded-lg' /> }
             
 
             {/* Feature title */}
