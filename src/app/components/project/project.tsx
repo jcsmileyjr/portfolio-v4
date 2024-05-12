@@ -5,6 +5,8 @@ import edgeMotors from '../../images/project-images/edge-motors.jpg';
 import blackjack from '../../images/project-images/blackjack3.png';
 import helpMe from '../../images/project-images/helpMe.png';
 import elder from '../../images/project-images/elder-1.png';
+import maintenance from '../../images/project-images/maintenance.png';
+import levelUp from '../../images/project-images/levelUp-1.png';
 
 const Project = ({project}: {project: ProjectType}) => {
     return (
@@ -15,6 +17,8 @@ const Project = ({project}: {project: ProjectType}) => {
             {project.picture === 'blackjack' && <Image src={blackjack} alt="" width={200} height={200} className='w-full h-96 md:w-96 rounded-lg' /> }
             {project.picture === 'helpMe' && <Image src={helpMe} alt="" width={200} height={200} className='w-full h-96 md:w-96 rounded-lg' /> }
             {project.picture === 'elder' && <Image src={elder} alt="" width={200} height={200} className='w-full h-96 md:w-96 rounded-lg' /> }
+            {project.picture === 'maintenance' && <Image src={maintenance} alt="" width={200} height={200} className='w-full h-96 md:w-96 rounded-lg' /> }
+            {project.picture === 'levelUp' && <Image src={levelUp} alt="" width={200} height={200} className='w-full h-96 md:w-96 rounded-lg' /> }
 
             {/* Feature title */}
             <h3 className='mt-2'>{project.title}</h3>

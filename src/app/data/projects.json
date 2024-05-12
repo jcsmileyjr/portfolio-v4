@@ -35,12 +35,34 @@
     {
         "type":"image",
         "picture":"elder",
-        "title":"Elder",
-        "description":"An app that allows multiple people to contribute to the care of a loved one.",
+        "title":"Keeping Up",
+        "description":"An full-stack app that allows multiple people to contribute to the care of a loved one.",
         "tech1":"nextjs",
         "tech2":"tailwindcss",
         "tech3":"sanityio",
         "github":"https://github.com/jcsmileyjr/elder",
         "demo":"https://elder-two.vercel.app/"
+    },
+    {
+        "type":"image",
+        "picture":"maintenance",
+        "title":"S&F Maintenance Assistant",
+        "description":"A full stack web app that lists and logs maintenance issues for Smiley's family car wash business. In business since 2019.",
+        "tech1":"nextjs",
+        "tech2":"tailwindcss",
+        "tech3":"sanityio",
+        "github":"https://github.com/jcsmileyjr/elder",
+        "demo":"https://github.com/jcsmileyjr/carwash"
+    },
+    {
+        "type":"image",
+        "picture":"levelUp",
+        "title":"Level Up Dev",
+        "description":"An app that helps developers visually track their technical skill and career progression.",
+        "tech1":"nextjs",
+        "tech2":"tailwindcss",
+        "tech3":"netlify",
+        "github":"https://github.com/jcsmileyjr/levelupdevalpha",
+        "demo":"https://levelupdev.netlify.app/"
     }
 ]
