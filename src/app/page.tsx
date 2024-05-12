@@ -47,6 +47,7 @@ export default function Home() {
           <div className='grid grid-cols-1 md:grid-cols-3 gap-8'>
             <Project project={Projects[0]} />
             <Project project={Projects[1]} />
+            <Project project={Projects[2]} />
           </div>
         </section>
       </div>

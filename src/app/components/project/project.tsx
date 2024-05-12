@@ -3,6 +3,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import edgeMotors from '../../images/project-images/edge-motors.jpg';
 import blackjack from '../../images/project-images/blackjack3.png';
+import helpMe from '../../images/project-images/helpMe.png';
 
 const Project = ({project}: {project: ProjectType}) => {
     return (
@@ -11,6 +12,7 @@ const Project = ({project}: {project: ProjectType}) => {
             {/* Feature a image */}
             {project.picture === 'edgeMotors' && <Image src={edgeMotors} alt="" width={200} height={200} className=' w-full h-96 md:w-96 rounded-lg' /> }
             {project.picture === 'blackjack' && <Image src={blackjack} alt="" width={200} height={200} className='w-full h-96 md:w-96 rounded-lg' /> }
+            {project.picture === 'helpMe' && <Image src={helpMe} alt="" width={200} height={200} className='w-full h-96 md:w-96 rounded-lg' /> }
             
 
             {/* Feature title */}
@@ -22,7 +24,10 @@ const Project = ({project}: {project: ProjectType}) => {
             {/* Feature Github link & demo link side by side */}
             <div className="flex flex-row justify-between mt-4">
                 <Link className='hover:underline' style={{color: '#20B3C7', fontWeight: 'bold'}} href={project.github} rel="noopener" target="_blank">GitHub </Link>
-                <Link className='hover:underline' style={{color: '#20B3C7', fontWeight: 'bold'}} href={project.demo} rel="noopener" target="_blank">Demo </Link>
+
+                {project.demo !== "none" &&
+                    <Link className='hover:underline' style={{color: '#20B3C7', fontWeight: 'bold'}} href={project.demo} rel="noopener" target="_blank">Demo </Link>
+                }
             </div>
         </article>
     );

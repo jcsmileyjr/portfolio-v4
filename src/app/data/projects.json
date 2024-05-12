@@ -11,7 +11,7 @@
         "demo":""
     },
     {
-        "type":"video",
+        "type":"image",
         "picture":"blackjack",
         "title":"Black-Jack",
         "description":"A traditional Black-Jack card game developed as a full-stack React app.",
@@ -20,5 +20,16 @@
         "tech3":"bootstrap",
         "github":"https://github.com/jcsmileyjr/BlackJack",
         "demo":"https://smiley-blackjack-game.netlify.app/"
+    },
+    {
+        "type":"image",
+        "picture":"helpMe",
+        "title":"Help Me",
+        "description":" Mental health crisis app that won the 2021 DigitalOcean Hackathon.",
+        "tech1":"angular",
+        "tech2":"css",
+        "tech3":"html",
+        "github":"https://github.com/xamthor/Help-Client",
+        "demo":"none"
     }
 ]
