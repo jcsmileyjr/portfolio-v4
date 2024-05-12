@@ -47,10 +47,10 @@ export default function Home() {
         </aside>
         <section className='w-full md:w-3/4'>
           <p className='m-auto px-2 md:px-0 mb-8'>These are my favorite projects curated from more than 100 in my GitHub.</p>
-          {/* Filter */}
-          <div className='flex flex-row justify-center gap-12 mb-4'>
+          {/* Filter Projects*/}
+          <div className='flex flex-row flex-wrap justify-center gap-12 mb-4'>
             <div>
-              <input className='appearance-none focus:bg-primaryBlue rounded-full w-6 h-6 border-2 border-solid border-primaryBlue' type="radio" id="All" name="technologies" value="All" checked={technologies === "All"} onChange={(e) => setTechnologies(e.target.value)} />
+              <input checked className={`${technologies === "All" ? "bg-primaryBlue" : ""} appearance-none focus:bg-primaryBlue rounded-full w-6 h-6 border-2 border-solid border-primaryBlue`} type="radio" id="All" name="technologies" value="All" checked={technologies === "All"} onChange={(e) => setTechnologies(e.target.value)} />
               <label className='text-lg ml-2' htmlFor="All">All</label>            
             </div>
             <div>
@@ -71,7 +71,7 @@ export default function Home() {
             </div>            
           </div>
 
-          {/* Projects */}
+          {/* DisplayProjects */}
           <div className='grid grid-cols-1 md:grid-cols-3 gap-8'>
             {
               Projects
