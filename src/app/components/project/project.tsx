@@ -1,7 +1,7 @@
 import ProjectType from '../../types/project';
 import Image from 'next/image';
 import Link from 'next/link';
-import edgeMotors from '../../images/project-images/edge-motors-1.jpg';
+import edgeMotors from '../../images/project-images/edge-motors.jpg';
 import blackjack from '../../images/project-images/blackjack3.png';
 
 const Project = ({project}: {project: ProjectType}) => {
@@ -9,20 +9,20 @@ const Project = ({project}: {project: ProjectType}) => {
         <article className='min-h-max flex flex-col justify-between'>
             {/* Feature a video - Future feature */}
             {/* Feature a image */}
-            {project.picture === 'edgeMotors' && <Image src={edgeMotors} alt="" width={200} height={200} className='h-auto min-h-80 min-w-full' /> }
-            {project.picture === 'blackjack' && <Image src={blackjack} alt="" width={200} height={200} className='h-auto min-h-80 w-full' /> }
+            {project.picture === 'edgeMotors' && <Image src={edgeMotors} alt="" width={200} height={200} className='h-96 w-96' /> }
+            {project.picture === 'blackjack' && <Image src={blackjack} alt="" width={200} height={200} className='h-96 w-96' /> }
             
 
             {/* Feature title */}
-            <h3>{project.title}</h3>
+            <h3 className='mt-2'>{project.title}</h3>
 
             {/* Feature content */}
-            <p>{project.description}</p>
+            <p className='mt-4'>{project.description}</p>
 
             {/* Feature Github link & demo link side by side */}
-            <div className="flex flex-row justify-between">
-                <Link href={project.github} rel="noopener" target="_blank">GitHub </Link>
-                <Link href={project.demo} rel="noopener" target="_blank">Demo </Link>
+            <div className="flex flex-row justify-between mt-4">
+                <Link className='hover:underline' style={{color: '#20B3C7', fontWeight: 'bold'}} href={project.github} rel="noopener" target="_blank">GitHub </Link>
+                <Link className='hover:underline' style={{color: '#20B3C7', fontWeight: 'bold'}} href={project.demo} rel="noopener" target="_blank">Demo </Link>
             </div>
         </article>
     );
