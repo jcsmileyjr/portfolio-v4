@@ -10,7 +10,7 @@ import {useState} from 'react';
 export default function Home() {
   const [technologies, setTechnologies] = useState("All");
   return (
-    <main className="flex min-h-screen flex-col">
+    <main className="flex min-h-screen flex-col mb-8">
       <Header />
       <div className='flex flex-col md:flex-row'>
         <aside className='w-full md:w-1/4'>
@@ -66,16 +66,20 @@ export default function Home() {
               <label className='text-lg ml-2' htmlFor="Angular">Angular</label>            
             </div>
             <div>
-              <input className='appearance-none focus:bg-primaryBlue rounded-full w-6 h-6 border-2 border-solid border-primaryBlue' type="radio" id="Angular" name="technologies" value="reactnative" checked={technologies === "reactnative"} onChange={(e) => setTechnologies(e.target.value)} />
-              <label className='text-lg ml-2' htmlFor="Angular">React Native</label>            
-            </div>            
+              <input className='appearance-none focus:bg-primaryBlue rounded-full w-6 h-6 border-2 border-solid border-primaryBlue' type="radio" id="React Native" name="technologies" value="reactnative" checked={technologies === "reactnative"} onChange={(e) => setTechnologies(e.target.value)} />
+              <label className='text-lg ml-2' htmlFor="React Native">React Native</label>            
+            </div>  
+            <div>
+              <input className='appearance-none focus:bg-primaryBlue rounded-full w-6 h-6 border-2 border-solid border-primaryBlue' type="radio" id="Full Stack" name="technologies" value="fullstack" checked={technologies === "fullstack"} onChange={(e) => setTechnologies(e.target.value)} />
+              <label className='text-lg ml-2' htmlFor="Full Stack">Full Stack</label>            
+            </div>          
           </div>
 
           {/* DisplayProjects */}
           <div className='grid grid-cols-1 md:grid-cols-3 gap-8'>
             {
               Projects
-              .filter(project => technologies === "All" || project.tech1 === technologies || project.tech2 === technologies || project.tech3 === technologies)
+              .filter(project => technologies === "All" || project.tech1 === technologies || project.tech2 === technologies || project.tech3 === technologies || (technologies === "fullstack" && (project.tech3 === "sanityio" || project.tech3 === "sanityio"))) // Leaving the extra sanityio for reference
               
               .map((project, index) => {
                 return (
