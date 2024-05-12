@@ -1,11 +1,14 @@
+"use client"
 import Image from 'next/image';
 import Header from './components/header/header';
 import HeadShot from './images/personal/head-shot.jpg';
 import DisplaySkill from './components/displaySkill/displaySkill';
 import Project from './components/project/project';
 import Projects from './data/projects.json';
+import {useState} from 'react';
 
 export default function Home() {
+  const [technologies, setTechnologies] = useState("All");
   return (
     <main className="flex min-h-screen flex-col">
       <Header />
@@ -44,6 +47,27 @@ export default function Home() {
         </aside>
         <section className='w-full md:w-3/4'>
           <p className='m-auto px-2 md:px-0 mb-8'>These are my favorite projects curated from more than 100 in my GitHub.</p>
+          {/* Filter */}
+          <div className='flex flex-row justify-center gap-12 mb-4'>
+            <div>
+              <input className='appearance-none focus:bg-primaryBlue rounded-full w-4 h-4 border-2 border-solid border-primaryBlue' type="radio" id="All" name="technologies" value="All" checked={technologies === "All"} onChange={(e) => setTechnologies(e.target.value)} />
+              <label className='text-lg ml-2' htmlFor="All">All</label>            
+            </div>
+            <div>
+              <input className='appearance-none focus:bg-primaryBlue rounded-full w-4 h-4 border-2 border-solid border-primaryBlue' type="radio" id="Nextjs" name="technologies" value="Nextjs" checked={technologies === "Nextjs"} onChange={(e) => setTechnologies(e.target.value)} />
+              <label className='text-lg ml-2' htmlFor="Nextjs">Nextjs</label>            
+            </div>
+            <div>
+              <input className='appearance-none focus:bg-primaryBlue rounded-full w-4 h-4 border-2 border-solid border-primaryBlue' type="radio" id="React" name="technologies" value="React" checked={technologies === "React"} onChange={(e) => setTechnologies(e.target.value)} />
+              <label className='text-lg ml-2' htmlFor="React">React</label>            
+            </div>
+            <div>
+              <input className='appearance-none focus:bg-primaryBlue rounded-full w-4 h-4 border-2 border-solid border-primaryBlue' type="radio" id="Angular" name="technologies" value="Angular" checked={technologies === "Angular"} onChange={(e) => setTechnologies(e.target.value)} />
+              <label className='text-lg ml-2' htmlFor="Angular">Angular</label>            
+            </div>
+          </div>
+
+          {/* Projects */}
           <div className='grid grid-cols-1 md:grid-cols-3 gap-8'>
             {
               Projects.map((project, index) => {
