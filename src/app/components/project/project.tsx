@@ -10,6 +10,10 @@ import levelUp from '../../images/project-images/levelUp-1.png';
 import reactIcon from '../../images/project-images/reactjs-icon.png';
 import cssIcon from '../../images/project-images/css-icon.png';
 import htmlIcon from '../../images/project-images/html-icon.png';
+import tsIcon from '../../images/project-images/typescript-icon.png';
+import angularIcon from '../../images/project-images/angular-icon.png';
+import bootstrapIcon from '../../images/project-images/bootstrap-icon.png';
+import nextIcon from '../../images/project-images/nextjs-icon.png';
 
 const Project = ({project}: {project: ProjectType}) => {
     return (
@@ -43,6 +47,24 @@ const Project = ({project}: {project: ProjectType}) => {
                         <p className=''>React Native</p>
                     </div>
                 }
+                {project.tech1 ==="nextjs" &&
+                    <div className='flex flex-col gap-4 items-center'>
+                        <Image src={nextIcon} alt="" width={25} height={25} className='' />
+                        <p className=''>Nextjs</p>
+                    </div>
+                }
+                {project.tech1 ==="angular" &&
+                    <div className='flex flex-col gap-4 items-center'>
+                        <Image src={angularIcon} alt="" width={25} height={25} className='' />
+                        <p className=''>Angular</p>
+                    </div>
+                }                
+                {project.tech2 ==="typescript" &&
+                    <div className='flex flex-col gap-4 items-center'>
+                        <Image src={tsIcon} alt="" width={25} height={25} className='' />
+                        <p className=''>TypeScript</p>
+                    </div>
+                }                
                 {project.tech2 ==="css" &&
                     <div className='flex flex-col gap-4 items-center'>
                         <Image src={cssIcon} alt="" width={25} height={25} className='' />
@@ -55,6 +77,12 @@ const Project = ({project}: {project: ProjectType}) => {
                         <p className=''>HTML</p>
                     </div>
                 }
+               {project.tech3 ==="bootstrap" &&
+                    <div className='flex flex-col gap-4 items-center'>
+                        <Image src={bootstrapIcon} alt="" width={25} height={25} className='' />
+                        <p className=''>Bootstrap</p>
+                    </div>
+                }                
             </div>
 
             {/* Feature Github link & demo link side by side */}
