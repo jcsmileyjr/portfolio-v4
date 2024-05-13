@@ -14,6 +14,9 @@ import tsIcon from '../../images/project-images/typescript-icon.png';
 import angularIcon from '../../images/project-images/angular-icon.png';
 import bootstrapIcon from '../../images/project-images/bootstrap-icon.png';
 import nextIcon from '../../images/project-images/nextjs-icon.png';
+import sanityIcon from '../../images/project-images/sanity-1.jpg';
+import tailwindCSSIcon from '../../images/project-images/tailwindcss-icon.png';
+import netlifyIcon from '../../images/project-images/netlify-icon.png';
 
 const Project = ({project}: {project: ProjectType}) => {
     return (
@@ -71,10 +74,16 @@ const Project = ({project}: {project: ProjectType}) => {
                         <p className=''>CSS</p>
                     </div>
                 }
-                {project.tech3 ==="html" &&
+                {project.tech2 ==="tailwindcss" &&
+                    <div className='flex flex-col gap-4 items-center'>
+                        <Image src={tailwindCSSIcon} alt="" width={25} height={25} className='' />
+                        <p className=''>TailwwindCSS</p>
+                    </div>
+                }                
+                {(project.tech2 ==="html" || project.tech3 ==="html") &&
                     <div className='flex flex-col gap-4 items-center'>
                         <Image src={htmlIcon} alt="" width={25} height={25} className='' />
-                        <p className=''>HTML</p>
+                        <p className=''>HTML5</p>
                     </div>
                 }
                {project.tech3 ==="bootstrap" &&
@@ -82,7 +91,19 @@ const Project = ({project}: {project: ProjectType}) => {
                         <Image src={bootstrapIcon} alt="" width={25} height={25} className='' />
                         <p className=''>Bootstrap</p>
                     </div>
-                }                
+                }
+               {project.tech3 ==="sanityio" &&
+                    <div className='flex flex-col gap-4 items-center'>
+                        <Image src={sanityIcon} alt="" width={25} height={25} className='' />
+                        <p className=''>Sanity.io</p>
+                    </div>
+                } 
+               {project.tech3 ==="netlify" &&
+                    <div className='flex flex-col gap-4 items-center'>
+                        <Image src={netlifyIcon} alt="" width={25} height={25} className='' />
+                        <p className=''>Netlify</p>
+                    </div>
+                }                                                
             </div>
 
             {/* Feature Github link & demo link side by side */}
