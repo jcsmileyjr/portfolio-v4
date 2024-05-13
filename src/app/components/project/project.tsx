@@ -76,7 +76,7 @@ const Project = ({project}: {project: ProjectType}) => {
                 }
                 {(project.tech2 ==="tailwindcss" || project.tech3 ==="tailwindcss") &&
                     <div className='flex flex-col gap-4 items-center'>
-                        <Image src={tailwindCSSIcon} alt="" width={25} height={25} className='' />
+                        <Image src={tailwindCSSIcon} alt="" width={40} height={25} className='' />
                         <p className=''>TailwwindCSS</p>
                     </div>
                 }                
