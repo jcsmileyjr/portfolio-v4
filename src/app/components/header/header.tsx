@@ -66,7 +66,7 @@ const Header = () => {
         {/* Possible use for transitions: transition-opacity duration-1000 ease-in-out opacity-100 */}
             <div className={`${size > 1024 ? 'flex lg:flex-row gap-2 lg:gap-4 mt-4 lg:mt-0 lg:mr-8 items-center flex-col' : isMenuOpen ? 'flex flex-col gap-2 mt-4 items-center' : 'hidden'}`}>
                 <Link className='hover:underline' href="/"><span className='text-white'>Projects</span></Link>
-                <Link className='hover:underline' href="/">About</Link>
+                <Link className='hover:underline' href="/about">About</Link>
                 <Link className='hover:underline' href="/">Blogs</Link>
                 <Link className='hover:underline' href="/">Technical Talks</Link>
                 <Link className='hover:underline' href="https://jcsmileyjr.gumroad.com/l/breakingIntoTech" rel="noopener" target="_blank">E-book</Link>
