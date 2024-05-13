@@ -27,7 +27,7 @@
         "title":"S&F Maintenance Assistant",
         "description":"A full stack web app that lists and logs maintenance issues for Smiley's family car wash business. In business since 2019.",
         "tech1":"nextjs",
-        "tech2":"tailwindcss",
+        "tech2":"typescript",
         "tech3":"sanityio",
         "github":"https://github.com/jcsmileyjr/elder",
         "demo":"https://github.com/jcsmileyjr/carwash"

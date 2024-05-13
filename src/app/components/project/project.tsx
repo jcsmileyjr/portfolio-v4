@@ -7,6 +7,16 @@ import helpMe from '../../images/project-images/helpMe.png';
 import elder from '../../images/project-images/elder-1.png';
 import maintenance from '../../images/project-images/maintenance.png';
 import levelUp from '../../images/project-images/levelUp-1.png';
+import reactIcon from '../../images/project-images/reactjs-icon.png';
+import cssIcon from '../../images/project-images/css-icon.png';
+import htmlIcon from '../../images/project-images/html-icon.png';
+import tsIcon from '../../images/project-images/typescript-icon.png';
+import angularIcon from '../../images/project-images/angular-icon.png';
+import bootstrapIcon from '../../images/project-images/bootstrap-icon.png';
+import nextIcon from '../../images/project-images/nextjs-icon.png';
+import sanityIcon from '../../images/project-images/sanity-1.jpg';
+import tailwindCSSIcon from '../../images/project-images/tailwindcss-icon.png';
+import netlifyIcon from '../../images/project-images/netlify-icon.png';
 
 const Project = ({project}: {project: ProjectType}) => {
     return (
@@ -25,6 +35,76 @@ const Project = ({project}: {project: ProjectType}) => {
 
             {/* Feature content */}
             <p className='mt-4'>{project.description}</p>
+
+            {/* Feature technologies */}
+            <div className='flex flex-row gap-4 justify-evenly mt-4'>
+                {project.tech1 ==="react" &&
+                    <div className='flex flex-col gap-4'>
+                        <Image src={reactIcon} alt="" width={25} height={25} className='' />
+                        <p className=''>React</p>
+                    </div>
+                }
+                {project.tech1 ==="reactnative" &&
+                    <div className='flex flex-col gap-4 items-center'>
+                        <Image src={reactIcon} alt="" width={25} height={25} className='' />
+                        <p className=''>React Native</p>
+                    </div>
+                }
+                {project.tech1 ==="nextjs" &&
+                    <div className='flex flex-col gap-4 items-center'>
+                        <Image src={nextIcon} alt="" width={25} height={25} className='' />
+                        <p className=''>Nextjs</p>
+                    </div>
+                }
+                {project.tech1 ==="angular" &&
+                    <div className='flex flex-col gap-4 items-center'>
+                        <Image src={angularIcon} alt="" width={25} height={25} className='' />
+                        <p className=''>Angular</p>
+                    </div>
+                }                
+                {project.tech2 ==="typescript" &&
+                    <div className='flex flex-col gap-4 items-center'>
+                        <Image src={tsIcon} alt="" width={25} height={25} className='' />
+                        <p className=''>TypeScript</p>
+                    </div>
+                }                
+                {project.tech2 ==="css" &&
+                    <div className='flex flex-col gap-4 items-center'>
+                        <Image src={cssIcon} alt="" width={25} height={25} className='' />
+                        <p className=''>CSS</p>
+                    </div>
+                }
+                {project.tech2 ==="tailwindcss" &&
+                    <div className='flex flex-col gap-4 items-center'>
+                        <Image src={tailwindCSSIcon} alt="" width={25} height={25} className='' />
+                        <p className=''>TailwwindCSS</p>
+                    </div>
+                }                
+                {(project.tech2 ==="html" || project.tech3 ==="html") &&
+                    <div className='flex flex-col gap-4 items-center'>
+                        <Image src={htmlIcon} alt="" width={25} height={25} className='' />
+                        <p className=''>HTML5</p>
+                    </div>
+                }
+               {project.tech3 ==="bootstrap" &&
+                    <div className='flex flex-col gap-4 items-center'>
+                        <Image src={bootstrapIcon} alt="" width={25} height={25} className='' />
+                        <p className=''>Bootstrap</p>
+                    </div>
+                }
+               {project.tech3 ==="sanityio" &&
+                    <div className='flex flex-col gap-4 items-center'>
+                        <Image src={sanityIcon} alt="" width={25} height={25} className='' />
+                        <p className=''>Sanity.io</p>
+                    </div>
+                } 
+               {project.tech3 ==="netlify" &&
+                    <div className='flex flex-col gap-4 items-center'>
+                        <Image src={netlifyIcon} alt="" width={25} height={25} className='' />
+                        <p className=''>Netlify</p>
+                    </div>
+                }                                                
+            </div>
 
             {/* Feature Github link & demo link side by side */}
             <div className="flex flex-row justify-between mt-4">
