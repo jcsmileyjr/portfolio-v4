@@ -19,7 +19,7 @@ const Header = () => {
     setSize(window.innerWidth);
     };    
     return (
-        <section className="bg-primaryBlue w-full text-white py-4 px-8 flex flex-col md:flex-row justify-between mb-8">
+        <section className="bg-primaryBlue w-full text-white py-4 px-8 flex flex-col lg:flex-row justify-between mb-8">
             <div className='flex flex-row justify-between'>
                 <div className='flex flex-row gap-4 items-center '>
                     <Image priority={false} src={Coder} width={75} height={50} alt="" className='h-16 ml-12' />
@@ -53,7 +53,7 @@ const Header = () => {
                         <Image priority={false} src={Devto} width={20} height={5} alt="" className='h-6' />            
                     </Link>
                 </div>
-                <button onClick={() => setIsMenuOpen(!isMenuOpen)} className='md:hidden' aria-expanded={isMenuOpen} aria-label="Toggle navigation">
+                <button onClick={() => setIsMenuOpen(!isMenuOpen)} className='lg:hidden' aria-expanded={isMenuOpen} aria-label="Toggle navigation">
                     <svg xmlns="http://www.w3.org/2000/svg"  width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
                         <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
                         <path d="M4 6l16 0" />
@@ -64,7 +64,7 @@ const Header = () => {
             </div>
             
         {/* Possible use for transitions: transition-opacity duration-1000 ease-in-out opacity-100 */}
-            <div className={`${size > 650 ? 'flex md:flex-row gap-2 md:gap-4 mt-4 md:mt-0 md:mr-8 items-center flex-col' : isMenuOpen ? 'flex flex-col gap-2 mt-4 items-center' : 'hidden'}`}>
+            <div className={`${size > 1024 ? 'flex lg:flex-row gap-2 lg:gap-4 mt-4 lg:mt-0 lg:mr-8 items-center flex-col' : isMenuOpen ? 'flex flex-col gap-2 mt-4 items-center' : 'hidden'}`}>
                 <Link className='hover:underline' href="/"><span className='text-white'>Projects</span></Link>
                 <Link className='hover:underline' href="/">About</Link>
                 <Link className='hover:underline' href="/">Blogs</Link>
