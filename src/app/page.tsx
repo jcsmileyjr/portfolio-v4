@@ -56,20 +56,24 @@ export default function Home() {
             <div className='flex flex-row justify-center1 ml-6 md:ml-0'>
               <input className='appearance-none hover:scale-125 focus:bg-primaryBlue rounded-full w-6 h-6 border-2 border-solid border-primaryBlue' type="radio" id="Full Stack" name="technologies" value="fullstack" checked={technologies === "fullstack"} onChange={(e) => setTechnologies(e.target.value)} />
               <label className='text-lg ml-2' htmlFor="Full Stack">Full Stack</label>            
-            </div>          
+            </div>
             <div className='flex flex-row justify-center1 ml-10 md:ml-0'>
+              <input className='appearance-none hover:scale-125 focus:bg-primaryBlue rounded-full w-6 h-6 border-2 border-solid border-primaryBlue' type="radio" id="Full Stack" name="technologies" value="typescript" checked={technologies === "typescript"} onChange={(e) => setTechnologies(e.target.value)} />
+              <label className='text-lg ml-2' htmlFor="TypeScript">TypeScript</label>            
+            </div>    
+            <div className='flex flex-row justify-center1 ml-6 md:ml-0'>
               <input className='appearance-none hover:scale-125 focus:bg-primaryBlue rounded-full w-6 h-6 border-2 border-solid border-primaryBlue' type="radio" id="Nextjs" name="technologies" value="nextjs" checked={technologies === "nextjs"} onChange={(e) => setTechnologies(e.target.value)} />
               <label className='text-lg ml-2' htmlFor="Nextjs">Nextjs</label>            
             </div>
-            <div className='flex flex-row justify-center1 ml-6 md:ml-0'>
+            <div className='flex flex-row justify-center1 ml-10 md:ml-0'>
               <input className='appearance-none hover:scale-125 focus:bg-primaryBlue rounded-full w-6 h-6 border-2 border-solid border-primaryBlue' type="radio" id="React" name="technologies" value="react" checked={technologies === "react"} onChange={(e) => setTechnologies(e.target.value)} />
               <label className='text-lg ml-2' htmlFor="React">React</label>            
             </div>
-            <div className='flex flex-row justify-center1 ml-10 md:ml-0'>
+            <div className='flex flex-row justify-center1 ml-6 md:ml-0'>
               <input className='appearance-none hover:scale-125 focus:bg-primaryBlue rounded-full w-6 h-6 border-2 border-solid border-primaryBlue' type="radio" id="Angular" name="technologies" value="angular" checked={technologies === "angular"} onChange={(e) => setTechnologies(e.target.value)} />
               <label className='text-lg ml-2' htmlFor="Angular">Angular</label>            
             </div>
-            <div className='flex flex-row justify-center1 ml-6 md:ml-0'>
+            <div className='flex flex-row justify-center1 ml-10 md:ml-0'>
               <input className='appearance-none hover:scale-125 focus:bg-primaryBlue rounded-full w-6 h-6 border-2 border-solid border-primaryBlue' type="radio" id="React Native" name="technologies" value="reactnative" checked={technologies === "reactnative"} onChange={(e) => setTechnologies(e.target.value)} />
               <label className='text-lg ml-2' htmlFor="React Native">React Native</label>            
             </div>  
