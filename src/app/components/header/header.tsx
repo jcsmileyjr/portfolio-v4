@@ -67,10 +67,10 @@ const Header = () => {
             <div className={`${size > 1024 ? 'flex lg:flex-row gap-2 lg:gap-4 mt-4 lg:mt-0 lg:mr-8 items-center flex-col' : isMenuOpen ? 'flex flex-col gap-2 mt-4 items-center' : 'hidden'}`}>
                 <Link className='hover:underline' href="/"><span className='text-white'>Projects</span></Link>
                 <Link className='hover:underline' href="/about">About</Link>
-                <Link className='hover:underline' href="/">Blogs</Link>
+                {/* <Link className='hover:underline' href="/">Blogs</Link> */}
                 <Link className='hover:underline' href="/techtalks">Technical Talks</Link>
                 <Link className='hover:underline' href="https://jcsmileyjr.gumroad.com/l/breakingIntoTech" rel="noopener" target="_blank">E-book</Link>
-                <Link className='hover:underline' href="/">Download Resume</Link>
+                {/* <Link className='hover:underline' href={resume} target="_blank"  rel="noopener noreferrer" locale={false} download>Download Resume</Link> */}
             </div>
         </section>
     )
