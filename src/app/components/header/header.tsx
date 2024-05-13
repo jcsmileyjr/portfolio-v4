@@ -68,7 +68,7 @@ const Header = () => {
                 <Link className='hover:underline' href="/"><span className='text-white'>Projects</span></Link>
                 <Link className='hover:underline' href="/about">About</Link>
                 <Link className='hover:underline' href="/">Blogs</Link>
-                <Link className='hover:underline' href="/">Technical Talks</Link>
+                <Link className='hover:underline' href="/techtalks">Technical Talks</Link>
                 <Link className='hover:underline' href="https://jcsmileyjr.gumroad.com/l/breakingIntoTech" rel="noopener" target="_blank">E-book</Link>
                 <Link className='hover:underline' href="/">Download Resume</Link>
             </div>
