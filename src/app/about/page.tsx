@@ -22,7 +22,7 @@ const About = () => {
                     <p className='mt-4'>
                     The app is called &quot;Help Me&quot; and is designed primarily as an &quot;SOS&quot; (distress signal) to a selected circle of trusted people 
                     when someone is going through a mental health crisis. The goal is for the user to build a trusted community around themselves 
-                    with private conversations and provide a system to show the user's range of emotions.
+                    with private conversations and provide a system to show the user&apos;s range of emotions.
                     </p>
                 </section>
                 <section className='flex flex-col justify-center items-center mt-4'>
