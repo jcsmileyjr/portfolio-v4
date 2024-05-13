@@ -29,8 +29,8 @@
         "tech1":"nextjs",
         "tech2":"typescript",
         "tech3":"sanityio",
-        "github":"https://github.com/jcsmileyjr/elder",
-        "demo":"https://github.com/jcsmileyjr/carwash"
+        "github":"https://github.com/jcsmileyjr/carwash",
+        "demo":"https://sfmaintenance.netlify.app/"
     },    
     {
         "type":"image",
