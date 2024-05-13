@@ -16,11 +16,11 @@ const About = () => {
                     <Image priority={false} src={HelpMe} width={300} height={300} alt="" className='my-4' />
                     <p>
                     On January 10, 2021, a friend and I submitted a mental health crisis app to the DigitalOcean 2021 App Hackathon. 
-                    To our surprise, out of 4 categories and 600 teams, we won the grand prize in the “Power to the People” category. 
+                    To our surprise, out of 4 categories and 600 teams, we won the grand prize in the &quot;Power to the People&quot; category. 
                     My greatest joy is that I helped create something that supports my friends and family who struggle with mental health issues.
                     </p>
                     <p className='mt-4'>
-                    The app is called “Help Me” and is designed primarily as an “SOS” (distress signal) to a selected circle of trusted people 
+                    The app is called &quot;Help Me&quot; and is designed primarily as an &quot;SOS&quot; (distress signal) to a selected circle of trusted people 
                     when someone is going through a mental health crisis. The goal is for the user to build a trusted community around themselves 
                     with private conversations and provide a system to show the user's range of emotions.
                     </p>
