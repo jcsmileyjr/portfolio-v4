@@ -3,7 +3,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import edgeMotors from '../../images/project-images/edge-motors.jpg';
 import blackjack from '../../images/project-images/blackjack3.png';
-import helpMe from '../../images/project-images/helpMe.png';
+import helpMe from '../../images/project-images/helpMe-2.png';
 import elder from '../../images/project-images/elder-1.png';
 import maintenance from '../../images/project-images/maintenance.png';
 import levelUp from '../../images/project-images/levelUp-1.png';
