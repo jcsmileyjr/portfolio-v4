@@ -38,8 +38,8 @@
         "title":"Help Me",
         "description":"Mental health crisis app that won the 2021 DigitalOcean Hackathon.",
         "tech1":"angular",
-        "tech2":"css",
-        "tech3":"html",
+        "tech2":"typescript",
+        "tech3":"tailwindcss",
         "github":"https://github.com/xamthor/Help-Client",
         "demo":"none"
     },
